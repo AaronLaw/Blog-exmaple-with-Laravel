@@ -1,1 +1,1 @@
-home
+@extends('templates.default')
