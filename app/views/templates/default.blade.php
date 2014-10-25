@@ -1,3 +1,3 @@
 @include('templates.partials.header')
-    Content here
+    @yield('content')
 @include('templates.partials.footer')
