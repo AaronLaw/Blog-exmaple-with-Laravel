@@ -1,9 +1,15 @@
 @extends('templates.default')
 
 @section('content')
-    <article>
-    	<h2>This is article title</h2>
-    	<p>This is some body</p>
-    	<a href="">Read more &rarr;</a>
-    </article>
+    @if($posts->count() )
+        @foreach($posts as $post)
+           <article>
+                <h2>{{ $post->title }}</h2>
+                <p>{{ $post->body }}</p>
+                <a href="">Read more &rarr;</a>
+            </article>
+        @endforeach
+    @else
+        <article>sorry, no post.</article>
+    @endif
 @stop('content')
