@@ -2,6 +2,6 @@
 <html>
     <head>
         <meta charset="uttf-8">
-        <title>Blog</title>
+        <title>@yield('title') | Blog</title>
     </head>
     <body>

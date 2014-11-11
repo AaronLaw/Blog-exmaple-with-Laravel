@@ -1,5 +1,7 @@
 @extends('templates.default')
 
+@section('title')Home @stop
+
 @section('content')
     @if($posts->count() )
         @foreach($posts as $post)
