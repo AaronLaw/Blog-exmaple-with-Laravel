@@ -15,7 +15,14 @@
 // {
 // 	return View::make('hello');
 // });
+// Route::model('post', 'Post');
+
 Route::get('/', [
 	'as' => 'home',
 	'uses' => 'HomeController@index'
+	]);
+
+Route::get('/post/{slug}', [
+	'as' => 'post-show',
+	'uses' => 'PostController@getShow'
 	]);
