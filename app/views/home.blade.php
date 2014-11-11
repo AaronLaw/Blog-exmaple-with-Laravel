@@ -5,7 +5,7 @@
         @foreach($posts as $post)
            <article>
                 <h2>{{ $post->title }}</h2>
-                <p>{{ $post->body }}</p>
+                <p>{{ Markdown::parse($post->body )}}</p>
                 <a href="">Read more &rarr;</a>
             </article>
         @endforeach
